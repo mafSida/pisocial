@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pisocial Sign Up</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="left-side">
+        <a class="logo-link" href=""> Pisocial </a>
+        <div class="oauth-btns">
+          <ul class="oauth-btns-list">
+            <li class="oauth-btns-item">
+              <a href="" class="oauth-btn-link">
+                <svg class="oauth-btn-icon">
+                  <use href=""></use>
+                </svg>
+                Sign up with Linkedln
+              </a>
+            </li>
+            <li class="oauth-btns-item">
+              <a href="" class="oauth-btn-link">
+                <svg class="oauth-btn-icon">
+                  <use href=""></use>
+                </svg>
+                Sign up with Twitter
+              </a>
+            </li>
+            <li class="oauth-btns-item">
+              <a href="" class="oauth-btn-link">
+                <svg class="oauth-btn-icon">
+                  <use href=""></use>
+                </svg>
+                Sign up with Facebook
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="right-side">
+        <div class="bg-decor-right"></div>
+        <div class="bg-decor-left"></div>
+        <div class="signup-wrap">
+          <h1 class="signup-title">Sign Up</h1>
+          <p class="signup-desc">Get started absolutely free</p>
+          <form class="signup-form">
+            <div class="signup-form-field">
+              <label class="signup-form-label" for="email">Email</label>
+              <input type="email" name="user-email" id="email" required />
+            </div>
 
+            <div class="signup-form-field">
+              <label class="signup-form-label" for="password">Password</label>
+              <input
+                type="password"
+                name="user-password"
+                id="password"
+                name="password"
+                required
+              />
+            </div>
+            <div class="policy-check-field">
+              <input
+                class="policy-check-input"
+                type="checkbox"
+                id="policy-check"
+                required
+              />
+              <label class="policy-check-label" for="policy-check"
+                >Creating an account means you’re okay with our
+                <span>Terms of Service</span>, <span>Privacy Policy</span>, and
+                default <span>Notification Settings</span></label
+              >
+            </div>
+            <button class="signup-btn" type="submit">Sign Up</button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
