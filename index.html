@@ -4,55 +4,93 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pisocial Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
     <div class="container">
       <section class="left-side">
-        <a class="logo-link" href=""> Pisocial </a>
-        <div class="oauth-btns">
+        <a class="logo-link" href="">
+          <svg class="logo-icon" width="123" height="62.3">
+            <use href="./img/sprite.svg#pisocial-logo-icon"></use>
+          </svg>
+        </a>
+        <div class="oauth-btns-wrap">
           <ul class="oauth-btns-list">
             <li class="oauth-btns-item">
               <a href="" class="oauth-btn-link">
-                <svg class="oauth-btn-icon">
-                  <use href=""></use>
-                </svg>
-                Sign up with Linkedln
+                <div class="oauth-icon-wrap">
+                  <svg class="oauth-btn-icon" width="13.75" height="13.01">
+                    <use href="./img/sprite.svg#linkedin-icon"></use>
+                  </svg>
+                </div>
+                <span class="oauth-btn-text">Sign up with Linkedln</span>
               </a>
             </li>
             <li class="oauth-btns-item">
               <a href="" class="oauth-btn-link">
-                <svg class="oauth-btn-icon">
-                  <use href=""></use>
-                </svg>
-                Sign up with Twitter
+                <div class="oauth-icon-wrap-twitter">
+                  <svg class="oauth-btn-icon-twitter" width="24" height="19.72">
+                    <use href="./img/sprite.svg#twitter-icon"></use>
+                  </svg>
+                </div>
+                <span class="oauth-btn-text"> Sign up with Twitter</span>
               </a>
             </li>
             <li class="oauth-btns-item">
               <a href="" class="oauth-btn-link">
-                <svg class="oauth-btn-icon">
-                  <use href=""></use>
-                </svg>
-                Sign up with Facebook
+                <div class="oauth-icon-wrap">
+                  <svg class="oauth-btn-icon" width="6.34" height="12.83">
+                    <use href="./img/sprite.svg#facebook-icon"></use>
+                  </svg>
+                </div>
+                <span class="oauth-btn-text">Sign up with Facebook</span>
               </a>
             </li>
           </ul>
         </div>
       </section>
       <section class="right-side">
-        <div class="bg-decor-right"></div>
-        <div class="bg-decor-left"></div>
+        <div class="bg-decor-right">
+          <svg width="141" height="146">
+            <use href="./img/sprite.svg#squares-bg-icon"></use>
+          </svg>
+        </div>
+        <div class="bg-decor-left">
+          <svg width="141" height="146">
+            <use href="./img/sprite.svg#squares-bg-icon"></use>
+          </svg>
+        </div>
         <div class="signup-wrap">
-          <h1 class="signup-title">Sign Up</h1>
-          <p class="signup-desc">Get started absolutely free</p>
+          <div class="signup-text-wrap">
+            <h1 class="signup-title">Sign Up</h1>
+            <p class="signup-desc">Get started absolutely free</p>
+          </div>
           <form class="signup-form">
             <div class="signup-form-field">
               <label class="signup-form-label" for="email">Email</label>
-              <input type="email" name="user-email" id="email" required />
+              <input
+                class="signup-form-input"
+                type="email"
+                name="user-email"
+                id="email"
+                required
+              />
             </div>
 
             <div class="signup-form-field">
               <label class="signup-form-label" for="password">Password</label>
               <input
+                class="signup-form-input"
                 type="password"
                 name="user-password"
                 id="password"
@@ -62,15 +100,19 @@
             </div>
             <div class="policy-check-field">
               <input
-                class="policy-check-input"
+                class="policy-check-input visually-hidden"
                 type="checkbox"
                 id="policy-check"
                 required
               />
-              <label class="policy-check-label" for="policy-check"
-                >Creating an account means you’re okay with our
-                <span>Terms of Service</span>, <span>Privacy Policy</span>, and
-                default <span>Notification Settings</span></label
+              <label class="policy-check-label" for="policy-check">
+                <span></span>
+                Creating an account means you’re okay with our
+                <a class="privacy-link" href="#">Terms of Service</a>,
+                <a class="privacy-link" href="#">Privacy Policy</a>, and default
+                <a class="privacy-link" href="#"
+                  >Notification Settings</a
+                ></label
               >
             </div>
             <button class="signup-btn" type="submit">Sign Up</button>
